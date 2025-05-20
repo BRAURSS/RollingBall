@@ -374,6 +374,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.1.3f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/FollowPlayer.cs"
 "Assets/MouvementPlayer.cs"
+"Assets/PlayerCollision.cs"
 -langversion:9.0
 /deterministic
 /optimize+

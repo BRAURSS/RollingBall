@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     // Ci dessous on fit reference au rigidbody
     public Rigidbody rb;
     // La puissance d'avancement du player
-    public float forwardForce = -200f;
+    public float forwardForce = -1000f;
 
     void FixedUpdate()
     {
@@ -16,11 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("d")) // Quand l'user tape sur la touche 'd'
         {
-            rb.AddForce(-50* Time.deltaTime, 0, 0);
+            rb.AddForce(-300* Time.deltaTime, 0, 0);
         }
         if (Input.GetKey("a")) // Quand l'user tape sur la touche 'q'
         {
-            rb.AddForce(50* Time.deltaTime, 0, 0);
+            rb.AddForce(300* Time.deltaTime, 0, 0);
         }
     }
 }
