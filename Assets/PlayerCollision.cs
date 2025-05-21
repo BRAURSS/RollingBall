@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    void OnCollisionEnter()
+    public PlayerMovement movement; // On gere les mouvement du player grace à cette propriété
+
+    void OnCollisionEnter(Collision collisionInfo)
     {
-        Debug.Log("We hit something !"); // Affiche un log a chaque collision du Player
+        if (collisionInfo.collider.tag == "Obstacle")
+        {
+            movement.enabled = false; // On désacive les mouvement du player comme ça
+        }
     }
 }
